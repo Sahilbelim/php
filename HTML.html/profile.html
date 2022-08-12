@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="success.html" method="post" enctype="multipart/form-data">
+        <table align="center" width="50% " border="1" cellpadding="10">
+<tr>
+    <td>
+        <input type="text" name="fullname" required placeholder="Enter full name">
+    </td>
+</tr>
+<tr>
+    <td><b>select gender</b><br>
+    <label for="male" >
+        <input type="radio" name="gender" id="male" value="1">male
+    </label><label for="female" >
+        <input type="radio" name="gender" id="female" value="0">male
+    </label>
+    
+</td>
+</tr>
+<tr>
+    <td><b>select languag you can speak,read,wrrite</b><br>
+    <label for="gujati">
+        <input type="checkbox" name="gurati" id="gujati" value="1">gujati
+    </label>   <label for="hindi">
+        <input type="checkbox" name="hindi" id="hindi" value="2">hindi
+    </label>   <label for="english">
+        <input type="checkbox" name="english" id="english" value="4">english
+    </label>   <label for="sanskrit">
+        <input type="checkbox" name="sanskrit" id="sanskrit" value="8">sanskrit
+    </label>   <label for="urdu">
+        <input type="checkbox" name="urdu" id="urdu" value="16">urdu
+    </label>   <label for="marathi">
+        <input type="checkbox" name="marathi" id="marathi" value="32">marathi
+    </label>
+    </td>
+</tr>
+<tr>
+    <td><select name="country" required>
+        <option >select country</option>
+        <option value="1">india</option>
+        <option value="2">russia</option>
+        <option value="3">canada</option>
+        <option value="4">us</option>
+    </select></td>
+
+</tr>
+<tr>
+    <td><b> Enter address </b><br>
+    <textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+</tr>
+<tr>
+    <td><b>select photo </b> <br>
+    <input type="file" name="photo" required accept="image/*"></td>
+</tr>
+<tr>
+    <td align="center" >
+        <input type="submit" value="submit">
+        <input type="reset" value="clear all">
+    </td>
+</tr>
+
+        </table>
+        <input type="hidden" name="secret" value="123456789">
+        <input type="hidden" name="sait" value="#ert24124324234^&*">
+    </form>
+</body>
+</html>
