@@ -22,6 +22,7 @@
     background-color: aliceblue;
     color: rgb(199, 234, 250);
     
+    
 }
 
 #footer {
@@ -124,14 +125,14 @@
 #menu>ul>li>a:link,
 #menu>ul>li>a:visited {
     color: #9CC3D5FF;
-    text-decoration: none;
+    text-decoration:none;
     font-family: 'teko', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 #menu>ul>li>a:hover {
-    color: palevioletred;
+    color: rgb(102, 214, 225);
     font-size: large;
 }
 

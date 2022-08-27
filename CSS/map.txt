@@ -1,0 +1,42 @@
+head //
+
+
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+
+ /head//
+
+
+ body//
+
+
+
+ <div id="map" style="width: 900px; height: 580px"></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script>
+        // Creating map options
+        var mapOptions = {
+            center: [21.772368, 72.141103],
+            zoom: 14
+        }
+
+        // Creating a map object
+        var map = new L.map('map', mapOptions);
+        // Creating a map object
+            
+            let iconOptions = {
+                title: "the easylearn academy",
+            }
+            let marker = new L.Marker([21.772368, 72.141103], iconOptions);
+            marker.addTo(map);
+        // Creating a Layer object
+
+        // Creating a Layer object
+        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+
+        // Adding layer to the map
+        map.addLayer(layer);
+    </script>
+    
+
+/body//
