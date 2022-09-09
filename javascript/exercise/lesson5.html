@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>write a program to calculate and return bmi of given weight and height (foot,inch) using arrow functions</b></h1>
+    <p id="output">output will come here  </p>
+
+    <script>
+        let bmi = (weight, hsquare) => weight/hsquare;
+        var h=parseFloat(prompt("Enter the  height in foot " ));
+        var weight=parseFloat(prompt("Enter the  weight in Kg " ));
+        var height=h/3.28;
+        let hsquare = height * height;
+
+    
+       console.log(hsquare);
+        console.log(weight);
+       var result2=bmi(weight,hsquare);
+       document.getElementById("output").innerHTML=result2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>write a program to calculate and return qube of given number using arrow function</b></h1>
+    <p id="output"> output come here</p>
+
+    <script>
+         //create/define function 
+    let qube = (a) => a * a * a;
+      
+        //input 
+       var a=parseInt(prompt("Enter the number"));
+       var result=qube(a);
+
+       document.getElementById("output").innerHTML = ("qube of given number is " + result);
+
+    </script>
+</body>
+</html>
