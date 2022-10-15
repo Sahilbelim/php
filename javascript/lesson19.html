@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <style>
+        /*internal stylesheet*/
+        div
+
+        /* type selector */
+            {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* type  selector*/
+        h2 {
+            color: black;
+        }
+
+        #grandparent
+
+        /* id selector */
+            {
+            background-color: orange;
+            width: 300px;
+            height: 300px;
+        }
+
+        /* id selector */
+        #parent {
+            color: black !important;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* id selector */
+        #child {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="grandparent"> Gran parent
+            <div id="parent">parent
+                <div id="child">child</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let grandparent = document.querySelector("#grandparent");
+        let parent = document.querySelector("#parent");
+        let child = document.querySelector("#child");
+
+
+        // 3rd way of hendling event
+        child.addEventListener("click", function () {
+            alert("child event trigger");
+        }, false);
+        parent.addEventListener("click", function () {
+            alert("parent event trigger");
+        }, false);
+        grandparent.addEventListener("click", function () {
+            alert("grandparent event trigger");
+        }, false);
+    </script>
+</body>
+
+</html>

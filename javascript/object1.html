@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        first methiod of creating object
+                        <hr /> 
+                        <b> use console to see output</b>
+                    </div>
+                    <div class="card-body" id="output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>
+        //first method to create object
+        const student =
+        {
+            //properties/state
+            name: "sahil belim",
+            gender: true,
+            weight: 46,
+            age: 17,
+            //method
+            display() 
+            {
+                var massage = "name : " + this.name + "<br> weight =" + this.weight + "<br>age =" + this.age;
+                //messag local variable\
+                document.getElementById("output").innerHTML = massage;
+            }
+        }
+        console.log(student);
+        //how to call object's method
+        student.display();
+        student.name="Sahil Mahmmad husen belim";
+        console.log("Name  "+ student.name);
+        </script>
+</html >
